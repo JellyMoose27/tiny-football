@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://cthc40jn877tx"]
+
+[ext_resource type="Script" uid="uid://dvx5vjbqx34gr" path="res://title_screen.gd" id="1_8s8ks"]
+[ext_resource type="Texture2D" uid="uid://dtylf4uq8f5bi" path="res://assets/Title/game_title.png" id="2_7bdjx"]
+
+[node name="Title Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8s8ks")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.33305895, 0.6324186, 0.82047474, 1)
+polygon = PackedVector2Array(-24, -32, 1328, -24, 1320, 768, -40, 752)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 360.0
+offset_right = 696.0
+offset_bottom = 432.0
+text = "Start Game"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 184)
+scale = Vector2(1.4450262, 1.2903224)
+texture = ExtResource("2_7bdjx")
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 560.0
+offset_right = 696.0
+offset_bottom = 632.0
+text = "Quit"
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 456.0
+offset_right = 696.0
+offset_bottom = 528.0
+text = "Options"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]

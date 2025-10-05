@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dnaw00q836yda"]
+
+[ext_resource type="Script" uid="uid://b18tpjvgkgbhf" path="res://goal.gd" id="1_0qle8"]
+[ext_resource type="Texture2D" uid="uid://ccrkdvmby0s5k" path="res://assets/goal/goal.png" id="1_6k3qi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qle8"]
+size = Vector2(89, 148)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p20yd"]
+size = Vector2(98, 26)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_0qle8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("1_6k3qi")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-11.5, 34)
+shape = SubResource("RectangleShape2D_0qle8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(16, -53)
+shape = SubResource("RectangleShape2D_p20yd")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

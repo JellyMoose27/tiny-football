@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://sy0s54jlkwd8"
+path="res://.godot/imported/Tekken 8 Seaside Resort Round 1 OST _Streak Of Blue_ [S4Lit6cTGv0].mp3-93118abe77c5be6cc22165be6c5dc452.mp3str"
+
+[deps]
+
+source_file="res://sounds/bgm/Tekken 8 Seaside Resort Round 1 OST _Streak Of Blue_ [S4Lit6cTGv0].mp3"
+dest_files=["res://.godot/imported/Tekken 8 Seaside Resort Round 1 OST _Streak Of Blue_ [S4Lit6cTGv0].mp3-93118abe77c5be6cc22165be6c5dc452.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

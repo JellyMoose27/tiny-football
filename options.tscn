@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmiwu378cic6a"]
+
+[ext_resource type="Script" uid="uid://bqk5n4vfwubxg" path="res://options.gd" id="1_se8ut"]
+[ext_resource type="PackedScene" uid="uid://d2gk5brkhjfu8" path="res://volume_slider.tscn" id="2_ao2gm"]
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_se8ut")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.33305895, 0.6324186, 0.82047474, 1)
+polygon = PackedVector2Array(-24, -32, 1328, -24, 1320, 768, -40, 752)
+
+[node name="VolumeSlider" parent="." instance=ExtResource("2_ao2gm")]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 368.0
+offset_right = 736.0
+offset_bottom = 384.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 598.0
+offset_top = 320.0
+offset_right = 686.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 24
+text = "Volume"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 448.0
+offset_right = 704.0
+offset_bottom = 512.0
+text = "Back"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
