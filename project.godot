@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Tiny Football"
-run/main_scene="uid://cthc40jn877tx"
+run/main_scene="uid://dr4rcvvc8px5a"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 

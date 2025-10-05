@@ -18,3 +18,4 @@ func reset_ball() -> void:
 	global_position = Vector2(640, 360)  # Center of screen
 	linear_velocity = Vector2.ZERO
 	angular_velocity = 0
+	sleeping = false

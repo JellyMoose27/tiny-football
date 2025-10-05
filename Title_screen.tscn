@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cthc40jn877tx"]
+[gd_scene load_steps=3 format=3 uid="uid://dr4rcvvc8px5a"]
 
-[ext_resource type="Script" uid="uid://dvx5vjbqx34gr" path="res://title_screen.gd" id="1_8s8ks"]
+[ext_resource type="Script" uid="uid://j3a4b3ipjy76" path="res://title_screen.gd" id="1_8s8ks"]
 [ext_resource type="Texture2D" uid="uid://dtylf4uq8f5bi" path="res://assets/Title/game_title.png" id="2_7bdjx"]
 
 [node name="Title Screen" type="Control"]
