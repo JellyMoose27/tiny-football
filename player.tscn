@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3 uid="uid://cslepsevafa0b"]
+[gd_scene load_steps=75 format=3 uid="uid://cslepsevafa0b"]
 
 [ext_resource type="Script" uid="uid://cd3s8y4e4etf2" path="res://player.gd" id="1_2wuci"]
 [ext_resource type="Texture2D" uid="uid://niw7jkswyx1c" path="res://characters/Ragna/sprites/idle/ragna_idle_1.png" id="1_4flbx"]
@@ -57,7 +57,6 @@
 [ext_resource type="Texture2D" uid="uid://cfkqbaqrvht1m" path="res://characters/Ragna/sprites/walk_forward/p2/rg030_06_p2.png" id="53_77e46"]
 [ext_resource type="Texture2D" uid="uid://cfqqd7qmwhjh7" path="res://characters/Ragna/sprites/walk_forward/p2/rg030_07_p2.png" id="54_cy2ki"]
 [ext_resource type="Texture2D" uid="uid://dr6ualu2sd7sp" path="res://characters/Ragna/sprites/walk_forward/p2/rg030_08_p2.png" id="55_04cqw"]
-[ext_resource type="Script" uid="uid://cesen7yvgir7i" path="res://health.gd" id="58_ygbnx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
 size = Vector2(74, 64)
@@ -1380,9 +1379,6 @@ shape = SubResource("RectangleShape2D_onrkg")
 [node name="Hurtbox2" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-8, -136)
 shape = SubResource("RectangleShape2D_i3pqv")
-
-[node name="Health" type="Node2D" parent="."]
-script = ExtResource("58_ygbnx")
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="body_entered" from="AnimatedSprite2D/5B/5B_Hitbox" to="." method="_on_b_hitbox_body_entered"]
