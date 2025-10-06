@@ -31,3 +31,32 @@ Option 2:
 - Click "Run Project" on the top right corner of the screen or press F5 to play the game
 
 # Known Issues
+**No pause menu**:
+  - Lack of a pause menu means that the only way to go back to the title screen is to re-launch the game.
+    
+**No win condition**:
+  - The gameplay is currently endless as there is no limit to the number of goals scored or time limit.
+    
+**Tunneling**:
+  - Despite a fail-safe implemented to prevent softlocking, the ball can tunnel through the walls every now and then. A possible solution to this is to use a Raycast2D object from Godot, however due to time constraints this has not yet been implemented.
+    
+**No sound effects**:
+  - Lack of sound effects can make the game somewhat lifeless and empty.
+    
+**No PVE**:
+  - Currently the game only supports local multiplayer with player 1 and player 2. Player AI has not yet been implemented
+    
+ **No player-to-player collision**:
+  - Lack of player-to-player collision can cause players to phase through each other
+
+# Asset Credits
+**Characters**
+- Character sprites are ripped from the character ![Ragna](https://www.dustloop.com/w/BBCF/Ragna_the_Bloodedge) from the fighting game ![BlazBlue Centralfiction](https://www.dustloop.com/w/BBCF). With player 2 sprites modified using Aseprite (full spritesheet can be found ![here](https://www.spriters-resource.com/pc_computer/blazbluecentralfiction/asset/92445/))
+  
+**Background music**
+- Title screen and gameplay music are taken from the 3D fighting game ![Tekken 8](https://tekken.fandom.com/wiki/TEKKEN_8_ORIGINAL_SOUNDTRACK).
+- The title screen's BGM is called ![Liberation](https://youtu.be/9e4heRDhJ94?si=l17TGQtcu6tzPBOD)
+- The gameplay's BGM is called ![Streak of Blue](https://youtu.be/S4Lit6cTGv0?si=0BUUhktopjwphguj)
+  
+**Others**
+- Asset sprites for clouds, ball, goal, heart (unused) and title logo are drawn using Aseprite
