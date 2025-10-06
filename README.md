@@ -6,7 +6,7 @@ A Game Programming project developed by Group 5 using the Godot Engine version 4
 
 Tiny Footbal is a one-on-one Pong-like fighting game developed by Group 5 of class CC01 on the Godot Engine 4.5, the core gameplay of Tiny Football is players will compete to take control of the ball to score as much as possible. Each players will control a character on each side of the screen, with player 1 on the left, and player 2 on the right. The player's objective is to kick the ball into the other player's goal on the opposite side and do it as many times as possible.
 
-**Fully detailed Game Design Document can be seen ![here](https://docs.google.com/document/d/1DZB3DOdCDvatDOHOyQoA1dfMkeiWyGJW_97vBWZ8FY0/edit?usp=sharing)**
+**Fully detailed Game Design Document can be seen [here](https://docs.google.com/document/d/1DZB3DOdCDvatDOHOyQoA1dfMkeiWyGJW_97vBWZ8FY0/edit?usp=sharing)**
 
 # Control scheme
 
@@ -51,12 +51,12 @@ Option 2:
 
 # Asset Credits
 **Characters**
-- Character sprites are ripped from the character ![Ragna](https://www.dustloop.com/w/BBCF/Ragna_the_Bloodedge) from the fighting game ![BlazBlue Centralfiction](https://www.dustloop.com/w/BBCF). With player 2 sprites modified using Aseprite (full spritesheet can be found ![here](https://www.spriters-resource.com/pc_computer/blazbluecentralfiction/asset/92445/))
+- Character sprites are ripped from the character [Ragna](https://www.dustloop.com/w/BBCF/Ragna_the_Bloodedge) from the fighting game [BlazBlue Centralfiction](https://www.dustloop.com/w/BBCF). With player 2 sprites modified using Aseprite (full spritesheet can be found [here](https://www.spriters-resource.com/pc_computer/blazbluecentralfiction/asset/92445/))
   
 **Background music**
-- Title screen and gameplay music are taken from the 3D fighting game ![Tekken 8](https://tekken.fandom.com/wiki/TEKKEN_8_ORIGINAL_SOUNDTRACK).
-- The title screen's BGM is called ![Liberation](https://youtu.be/9e4heRDhJ94?si=l17TGQtcu6tzPBOD)
-- The gameplay's BGM is called ![Streak of Blue](https://youtu.be/S4Lit6cTGv0?si=0BUUhktopjwphguj)
+- Title screen and gameplay music are taken from the 3D fighting game [Tekken 8](https://tekken.fandom.com/wiki/TEKKEN_8_ORIGINAL_SOUNDTRACK).
+- The title screen's BGM is called [Liberation](https://youtu.be/9e4heRDhJ94?si=l17TGQtcu6tzPBOD)
+- The gameplay's BGM is called [Streak of Blue](https://youtu.be/S4Lit6cTGv0?si=0BUUhktopjwphguj)
   
 **Others**
 - Asset sprites for clouds, ball, goal, heart (unused) and title logo are drawn using Aseprite
