@@ -1,7 +1,9 @@
 extends RigidBody2D
 
+# Apply force to the ball to simulate the player kicking it
 func kick(direction):
 	var impulse = Vector2(direction * 800, -800 * 0.4)
+	# Apply force to the ball based on the player's facing direction (p1 is right, p2 is left)
 	apply_impulse(impulse)
 	
 func _physics_process(_delta: float) -> void:
@@ -13,7 +15,8 @@ func _physics_process(_delta: float) -> void:
 
 func reset_ball() -> void:
 	# Reset the ball's position when it exits the screen
-	# Note: will not work with the scoring mechanic, as it would "sleep" the ball instead
+	# Note: will not work with the scoring mechanic, as it would instead stop all momentum of the ball
+	# without resetting it's position, effectively "sleeping" it.
 	global_position = Vector2(640, 360)  # Center of screen
 	linear_velocity = Vector2.ZERO
 	angular_velocity = 0

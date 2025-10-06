@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cmiwu378cic6a"]
 
-[ext_resource type="Script" uid="uid://bqk5n4vfwubxg" path="res://options.gd" id="1_se8ut"]
+[ext_resource type="Script" uid="uid://cq3qomg1a0nyc" path="res://options.gd" id="1_se8ut"]
 [ext_resource type="PackedScene" uid="uid://d2gk5brkhjfu8" path="res://volume_slider.tscn" id="2_ao2gm"]
 
 [node name="Options" type="Control"]

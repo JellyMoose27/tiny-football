@@ -1,5 +1,7 @@
 extends Control
 
+# MenuTheme is a global variable
+
 func _ready() -> void:
 	MenuTheme.play_music_lvl()
 

@@ -6,6 +6,8 @@ var p2_score: int = 0
 var BallScene := preload("res://Ball.tscn")
 var ball: RigidBody2D
 
+# load the BGM, spawn the ball entity
+# and hide the instructions after a set amount of time
 func _ready() -> void:
 	$BGM.play()
 	spawn_ball()
@@ -13,11 +15,13 @@ func _ready() -> void:
 	$Label.hide()
 	$Label2.hide()
 
+# despawn the ball when it enters the goal
 func despawn_ball() -> void:
 	if ball:
 		ball.queue_free()
 		ball = null
 
+# respawn the ball at it's initial position (center of the screen)
 func spawn_ball() -> void:
 	ball = BallScene.instantiate()
 	add_child(ball)
@@ -40,6 +44,7 @@ func _on_goal_1_scored() -> void:
 	await get_tree().create_timer(1.0).timeout
 	spawn_ball()
 
+# Update the score visual
 func update_score(score, player) -> void:
 	if player == "p1":
 		$Player1Score.text = "Player 1: %d" % [score]
