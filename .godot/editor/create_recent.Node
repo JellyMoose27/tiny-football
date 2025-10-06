@@ -1,0 +1,14 @@
+Label
+Sprite2D
+Button
+Polygon2D
+HSlider
+CollisionShape2D
+Area2D
+AudioStreamPlayer
+Node2D
+StaticBody2D
+RigidBody2D
+AnimatedSprite2D
+AnimationPlayer
+CharacterBody2D
