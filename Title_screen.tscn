@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dr4rcvvc8px5a"]
+[gd_scene load_steps=5 format=3 uid="uid://dr4rcvvc8px5a"]
 
 [ext_resource type="Script" uid="uid://j3a4b3ipjy76" path="res://title_screen.gd" id="1_8s8ks"]
 [ext_resource type="Texture2D" uid="uid://dtylf4uq8f5bi" path="res://assets/Title/game_title.png" id="2_7bdjx"]
+[ext_resource type="FontFile" uid="uid://clexor6fbn8r1" path="res://kenney_mini_square.ttf" id="2_uffmt"]
+[ext_resource type="Texture2D" uid="uid://h75f4ptfw6ns" path="res://characters/1190px-GBVSR_Gran_214M.png" id="4_uffmt"]
 
 [node name="Title Screen" type="Control"]
 layout_mode = 3
@@ -22,7 +24,9 @@ offset_left = 576.0
 offset_top = 360.0
 offset_right = 696.0
 offset_bottom = 432.0
+theme_override_fonts/font = ExtResource("2_uffmt")
 text = "Start Game"
+flat = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(640, 184)
@@ -35,7 +39,9 @@ offset_left = 576.0
 offset_top = 560.0
 offset_right = 696.0
 offset_bottom = 632.0
+theme_override_fonts/font = ExtResource("2_uffmt")
 text = "Quit"
+flat = true
 
 [node name="Options" type="Button" parent="."]
 layout_mode = 0
@@ -43,7 +49,15 @@ offset_left = 576.0
 offset_top = 456.0
 offset_right = 696.0
 offset_bottom = 528.0
+theme_override_fonts/font = ExtResource("2_uffmt")
 text = "Options"
+flat = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-32, -24.000008)
+rotation = 0.78508425
+scale = Vector2(0.15588242, 0.14444445)
+texture = ExtResource("4_uffmt")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

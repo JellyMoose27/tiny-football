@@ -9,6 +9,9 @@ var ball: RigidBody2D
 func _ready() -> void:
 	$BGM.play()
 	spawn_ball()
+	await get_tree().create_timer(6).timeout
+	$Label.hide()
+	$Label2.hide()
 
 func despawn_ball() -> void:
 	if ball:

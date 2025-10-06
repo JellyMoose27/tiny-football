@@ -60,7 +60,10 @@ func _on_b_hitbox_body_entered(body: Node2D) -> void:
 		#disable hithox to prevent hitting the ball twice
 		$"AnimatedSprite2D/5B/5B_Hitbox/HitBox".set_deferred("disabled", true)
 		$"AnimatedSprite2D/5B/5B_Hitbox/HitBox2".set_deferred("disabled", true)
-		frameFreeze(0, 0.1)
+		#Note: frameFreeze can add extra speed to the ball (unintentional)
+		#This is because even though the frame froze, the apply_impulse function
+		#still applies force every frame
+		frameFreeze(0, 0.08)
 		if action_suffix == "_p1":
 			body.kick(1)
 		elif action_suffix == "_p2":
